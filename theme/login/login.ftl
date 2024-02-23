@@ -24,7 +24,7 @@
         </div>
         <div class="box-container">
             <div>
-                <p class="application-name">VerlaineSSO</p>
+                <p class="application-name">SphereLink</p>
             </div>
         <#if realm.password>
             <div>
