@@ -1,12 +1,12 @@
-# VerlaineSSO Keycloak Theme
+# SphereLink Keycloak Theme
 
-[![Build Status](https://github.com/Friezer-85/verlainesso-theme/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Friezer-85/verlainesso-theme/actions/workflows/ci.yml)
+[![Build Status](https://github.com/EduSphereRP/SphereLink-theme/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/EduSphereRP/SphereLink-theme/actions/workflows/ci.yml)
 
 ## Overview
 
-The [VerlaineSSO Theme](https://github.com/Friezer-85/verlainesso-theme) uses [Keycloak](https://www.keycloak.org/).  Out of the box, the UI provided by Keycloak is 
-quite different from the rest of VerlaineSSO.  But Keycloak allows a customer to provide alternative themes to replace the default
-Keycloak themes.  We use this mechanism to provide an VerlaineSSO theme.
+The [SphereLink Theme](https://github.com/EduSphereRP/SphereLink-theme) uses [Keycloak](https://www.keycloak.org/).  Out of the box, the UI provided by Keycloak is 
+quite different from the rest of SphereLink.  But Keycloak allows a customer to provide alternative themes to replace the default
+Keycloak themes.  We use this mechanism to provide an SphereLink theme.
 
 ## Design
 
@@ -18,7 +18,7 @@ The following themes can be replaced.
 * admin 
  
 This projects contains a theme that can be used to replace the login theme to provide
-an experience that is consistent with VerlaineSSO.  
+an experience that is consistent with SphereLink.  
 
 Several approaches are possible.  
 1. **Extend the existing themes**.  With this approach, a copy of the default theme is made and selective
@@ -45,8 +45,8 @@ The project also includes improvements to the translated messages for the langua
 ```
  C:\keycloak\themes
  ```
-2. Create a directory named *VerlaineSSO*.  
-3. Copy the *login* directory from this project to a *login* directory in the VerlaineSSO theme directory you 
+2. Create a directory named *SphereLink*.  
+3. Copy the *login* directory from this project to a *login* directory in the SphereLink theme directory you 
 just created
 4. Start Keycloak
 
@@ -62,20 +62,20 @@ kubectl get pods
 3. Use the kubectl command to copy the login directory from the cloned project to the pod running Keycloak.  In the example below,the name of the Kubernetes namespace is *default*
 and the name of the pod is *erstwhile-rabbit-key-0*
 ```
-# create alfresco theme directory
-kubectl exec erstwhile-rabbit-key-0 --namespace default -- mkdir /opt/jboss/keycloak/themes/verlainesso
+# create SphereLink theme directory
+kubectl exec erstwhile-rabbit-key-0 --namespace default -- mkdir /opt/jboss/keycloak/themes/SphereLink
 # copy theme files to the pod
-kubectl cp ~/IdeaProjects/verlainesso-theme/theme/login default/erstwhile-rabbit-key-0:/opt/jboss/keycloak/themes/verlainesso
+kubectl cp ~/IdeaProjects/SphereLink-theme/theme/login default/erstwhile-rabbit-key-0:/opt/jboss/keycloak/themes/SphereLink
 ```
 
 ## Using the Theme 
-**NOTE**: These instructions assume you are using a Keycloak realm named *VerlaineSSO* such as is 
+**NOTE**: These instructions assume you are using a Keycloak realm named *SphereLink* such as is 
 created by the [Alfresco DBP Deployment](https://github.com/Alfresco/alfresco-dbp-deployment).  But you can also apply the theme to the *default* realm or some other realm.
 1. Navigate to the admin console for the realm as in e.g. 
 ```
-https://sso.ac-verlaine.net/auth/admin/master/console/#/realms/prod
+https://spherelink.fr/auth/admin/master/console/#/realms/prod
 ```
-2. Choose the *VerlaineSSO*
+2. Choose the *SphereLink*
 theme as [illustrated](./screen-captures/admin-console-themes.png).  Click *Save*.
 3. Login to a page in the *VerlaineSSO* realm that requires authentication (e.g. https://sso.ac-verlaine.net/auth/realms/prod/account) and
 you should see a form like this.  
