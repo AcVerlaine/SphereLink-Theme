@@ -10,7 +10,7 @@ DISTRIBUTION_NAME=spherelink-theme-$THEME_VERSION
 echo "info::: Removing an existing '$DISTRIBUTION_NAME.zip' file."
 rm -rf $DISTRIBUTION_NAME.zip
 
-mkdir alfresco
+mkdir spherelink
 echo "info::: Packaging spherelink theme as '$DISTRIBUTION_NAME.zip'"
 
 cp -rf theme/* spherelink/
