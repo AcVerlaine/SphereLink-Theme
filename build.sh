@@ -13,7 +13,7 @@ rm -rf $DISTRIBUTION_NAME.zip
 mkdir alfresco
 echo "info::: Packaging spherelink theme as '$DISTRIBUTION_NAME.zip'"
 
-cp -rf theme/* verlainesso/
+cp -rf theme/* spherelink/
 zip -r $DISTRIBUTION_NAME.zip spherelink
 
 echo "info::: Cleanup temp files and folders."
