@@ -24,7 +24,7 @@
         </div>
         <div class="box-container">
             <div>
-                <p class="application-name">Connectez vous avec SphereID</p>
+                <p class="application-name">Connectez-vous avec SphereID</p>
             </div>
         <#if realm.password>
             <div>
