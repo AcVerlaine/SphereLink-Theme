@@ -20,7 +20,7 @@
         </script>
     <#elseif section = "form">
         <div>
-            <img class="logo" src="${url.resourcesPath}/img/apple-touch-icon.png" alt="EduSphere">
+            <img class="logo" src="${url.resourcesPath}/img/EduSphere.png" alt="EduSphere">
         </div>
         <div class="box-container">
             <div>
